@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+            background-image: url('istockphoto-1353583431-612x612.jpg'); /* Ensure correct image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            border: 5px solid #333;
+            background-color: #333;
+        }
+
+        .chessboard div {
+            width: 50px;
+            height: 50px;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessboard">
+        <!-- Creating 64 squares for the chessboard -->
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+    </div>
+</body>
+
+</html>

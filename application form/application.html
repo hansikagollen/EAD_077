@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main {
+            background-color: #d9e314;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%; /* Adjusted width to ensure the form fits within the viewport */
+            max-width: 400px; /* Limits the width on larger screens */
+            box-sizing: border-box;
+        }
+
+        .main h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .checkbox-group label {
+            margin-right: 10px;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            background-color: green;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Application Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" maxlength="10" required />
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll" maxlength="12" required />
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female" checked> Female
+            <input type="radio" name="gender" value="other"> Other
+
+            <label for="favorite-color">Favorite Color:</label>
+            <div class="checkbox-group">
+                <label for="red"><input type="checkbox" id="red" name="favorite_color" value="red"> Red</label>
+                <label for="blue"><input type="checkbox" id="blue" name="favorite_color" value="blue"> Blue</label>
+                <label for="green"><input type="checkbox" id="green" name="favorite_color" value="green"> Green</label>
+            </div>
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
