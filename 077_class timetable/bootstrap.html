@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Heading styles */
+        h2 {
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        body {
+            background: linear-gradient(to right, #E6E6FA, #ADD8E6);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 100vw;
+            overflow-x: auto;
+            box-sizing: border-box;
+        }
+
+        .table-responsive {
+            display: block;
+            overflow-x: auto;
+        }
+
+        .table {
+            width: 100%;
+            table-layout: auto;
+        }
+
+        .table thead th {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border-color: #000000 !important;
+        }
+
+        .table tbody td {
+            background-color: #f4e3d7 !important;
+            color: #333333 !important;
+            border-color: #000000 !important;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f1d8c0 !important;
+        }
+
+        .table td, .table th {
+            border-width: 2px !important;
+            border-style: solid !important;
+            border-color: #000000 !important;
+        }
+
+        .table th, .table td {
+            padding: 0.5rem !important;
+            font-size: 0.85rem;
+        }
+
+        .table tbody th {
+            background-color: #d3d3d3 !important;
+            color: #000000 !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Class Timetable</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>9:10 AM - 10:10 AM</th>
+                    <th>10:10 AM - 11:15 AM</th>
+                    <th>11:15 AM - 12:15 PM</th>
+                    <th>12:15 PM - 1:00 PM</th>
+                    <th>1:00 PM - 2:00 PM</th>
+                    <th>2:00 PM - 3:00 PM</th>
+                    <th>3:00 PM - 4:00 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td>SE</td>
+                    <td>CS</td>
+                    <td>EAD</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>FLAT</td>
+                    <td>CT LAB</td>
+                    <td>ML</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>EAD</td>
+                    <td>CT LAB</td>
+                    <td>CN LAB</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>CS</td>
+                    <td>CN</td>
+                    <td>CN LAB</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>CN</td>
+                    <td>CC LAB</td>
+                    <td>SE</td>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+                <tr>
+                    
+                    <td>ML LAB</td>
+                    <td>ML LAB</td>
+                    <td>CN</td>
+                    <td>SE</td>
+                    <td>EAD LAB</td>
+                </tr>
+                <tr>
+                    
+                    <td>FLAT</td>
+                    <td>ML</td>
+                    <td>CS</td>
+                    <td>EAD</td>
+                    <td>Library</td>
+                </tr>
+                <tr>
+                    
+                    <td>FLAT</td>
+                    <td>ML</td>
+                    <td>CS</td>
+                    <td>EAD</td>
+                    <td>Library</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
