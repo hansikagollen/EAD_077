@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+            background-image: url('istockphoto-1353583431-612x612.jpg'); /* Ensure correct image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: repeat(4, 50px);
+            border: 5px solid #333;
+            background-color: #333;
+        }
+
+        .chessboard div {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Adding vibrant colors */
+        .color1 {
+            background-color: red;
+        }
+
+        .color2 {
+            background-color: blue;
+        }
+
+        .color3 {
+            background-color: green;
+        }
+
+        .color4 {
+            background-color: yellow;
+        }
+
+        .color5 {
+            background-color: orange;
+        }
+
+        .color6 {
+            background-color: purple;
+        }
+
+        .color7 {
+            background-color: pink;
+        }
+
+        .color8 {
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessboard">
+        <!-- Creating 16 squares for the 4x4 chessboard -->
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+
+        <div class="color5"></div>
+        <div class="color6"></div>
+        <div class="color7"></div>
+        <div class="color8"></div>
+
+        <div class="color1"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+        <div class="color4"></div>
+
+        <div class="color5"></div>
+        <div class="color6"></div>
+        <div class="color7"></div>
+        <div class="color8"></div>
+    </div>
+</body>
+
+</html>
